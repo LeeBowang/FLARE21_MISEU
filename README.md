@@ -20,6 +20,10 @@ unzip nnUNet.zip
 cd ../..
 ```
 
+
+
+---
+
 "raw_data" folders are empty. Insert the corresponding data base:
 
 ​	imagesTr: training
