@@ -33,11 +33,11 @@ cd ../../
 ### 3. Inference
 
 ```shell
-python inference/predict_simple.py -i nnUNet_raw_data_base/nnUNet_raw_data/imagesTr -o nnUNet_raw_data_base/Outputs -t Task000_FLARE21Baseline -m CONFIGURATION
+python inference/predict_simple.py -i INPUT_FOLDER -o OUTPUT_FOLDER -t Task000_FLARE21Baseline -m CONFIGURATION
 ```
 
-* `INPUT_FOLDER` is the folder path that contains nii files for testing
-* `OUTPUT_FOLDER` is the folder path for the predictions of the baseline model
+* `INPUT_FOLDER` is the folder path that contains nii files for testing (nnUNet_raw_data_base/nnUNet_raw_data/imagesTr)
+* `OUTPUT_FOLDER` is the folder path for the predictions of the baseline model (nnUNet_raw_data_base/Outputs)
 * `CONFIGUREATION` should be `2d` or `3d_fullres` referring to 2D or 3D models, respectively.
 
 For more usage, please refer to [the repositry of nnUNet](https://github.com/MIC-DKFZ/nnUNet).
