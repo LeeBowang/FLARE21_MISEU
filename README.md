@@ -4,27 +4,25 @@ The official baseline model for ["MICCAI 2021 FLARE Challenge: Fast and Low GPU 
 
 ## Usage
 
-### ~~1. Download pretrained models~~
+### 1. Download pretrained models
 
 Download models from 
 * [Baidu Net Disk](https://pan.baidu.com/s/1tCvK6ZRGFB2Je3NcdBU4qg) (PW: 2021).
 * [Google Drive](https://drive.google.com/file/d/1Ox8AjFc_SrJm7waGYzsBbhMfJ0OJoKiY/view?usp=sharing)
 
-### ~~2. Setup models~~
+### 2. Setup models
 
 ```shell
-git clone https://github.com/YaoZhang93/FLARE21nnUNetBaseline.git
-cp ./FLARE21nnUNetBaseline/nnUNet.zip ./FLARE21/datasets
-cd ./FLARE21nnUNetBaseline/FLARE21/datasets/
+git clone https://github.com/LeeBowang/FLARE21_MISEU.git
+cp ./FLARE21nnUNetBaseline/nnUNet.zip ./FLARE21/nnunet/nnUNet_raw_data_base/RESULTS_FOLDER
+cd ./FLARE21/nnunet/nnUNet_raw_data_base/RESULTS_FOLDER
 unzip nnUNet.zip
-cd ../..
+cd ../../
 ```
 
 
 
----
-
-"raw_data" folders are empty. Insert the corresponding data base:
+"raw_data" folders are also empty. Insert the corresponding data base:
 
 ​	imagesTr: training
 
