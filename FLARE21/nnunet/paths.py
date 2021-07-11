@@ -32,6 +32,9 @@ network_training_output_dir_base = os.path.join(os.environ['RESULTS_FOLDER']) if
 # base = './data/'
 # preprocessing_output_dir = base + 'nnUNet_preprocessed/'
 # network_training_output_dir_base = base + 'RESULTS_FOLDER/'
+base = './nnUNet_raw_data_base/'
+preprocessing_output_dir = base + 'nnUNet_preprocessed/'
+network_training_output_dir_base = base + 'RESULTS_FOLDER/'
 
 if base is not None:
     nnUNet_raw_data = join(base, "nnUNet_raw_data")

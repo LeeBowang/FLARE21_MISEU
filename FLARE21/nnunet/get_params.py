@@ -13,7 +13,7 @@ parser.add_argument('-m', '--model', help="2d, 3d_lowres, 3d_fullres or 3d_casca
 args = parser.parse_args()
 model = args.model
 
-model_path = join('./data/RESULTS_FOLDER/nnUNet', model, 'Task000_FLARE21Baseline/nnUNetTrainerV2__nnUNetPlansv2.1')
+model_path = join('./nnUNet_raw_data_base/RESULTS_FOLDER/nnUNet', model, 'Task000_FLARE21Baseline/nnUNetTrainerV2__nnUNetPlansv2.1')
 trainer, params = load_model_and_checkpoint_files(model_path, folds='all', checkpoint_name='model_final_checkpoint')
 pkl_file = join(model_path, "all/model_final_checkpoint.model.pkl")
 info = load_pickle(pkl_file)
