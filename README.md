@@ -115,6 +115,8 @@ We encourage the participants to use it for the analysis of the models. `get_flo
 
 below are untested
 
+**note**: there may still be some address problems such as FLARE21/predict.sh, line 10.  Make alterations when necessary.
+
 ---
 
 ### 6. Evaluation
