@@ -1,16 +1,16 @@
-# FLARE 2021 Baseline
+# FLARE21 Baseline
 
 The official baseline model for ["MICCAI 2021 FLARE Challenge: Fast and Low GPU memory Abdominal oRgan sEgmentation"](https://flare.grand-challenge.org/FLARE21/), derived from [nnUNet](https://github.com/MIC-DKFZ/nnUNet) [1].
 
 ## Usage
 
-### 1. Download pretrained models
+### ~~1. Download pretrained models~~
 
 Download models from 
 * [Baidu Net Disk](https://pan.baidu.com/s/1tCvK6ZRGFB2Je3NcdBU4qg) (PW: 2021).
 * [Google Drive](https://drive.google.com/file/d/1Ox8AjFc_SrJm7waGYzsBbhMfJ0OJoKiY/view?usp=sharing)
 
-### 2. Setup models
+### ~~2. Setup models~~
 
 ```shell
 git clone https://github.com/YaoZhang93/FLARE21nnUNetBaseline.git
@@ -20,10 +20,18 @@ unzip nnUNet.zip
 cd ../..
 ```
 
+"raw_data" folders are empty. Insert the corresponding data base:
+
+​	imagesTr: training
+
+​	imagesTs: testing
+
+​	labelsTr: training masks
+
 ### 3. Inference
 
 ```shell
-python inference/predict_simple.py -i INPUT_FOLDER -o OUTPUT_FOLDER -t Task000_FLARE21Baseline -m CONFIGURATION
+python inference/predict_simple.py -i nnUNet_raw_data_base/nnUNet_raw_data/imagesTr -o nnUNet_raw_data_base/Outputs -t Task000_FLARE21Baseline -m CONFIGURATION
 ```
 
 * `INPUT_FOLDER` is the folder path that contains nii files for testing
@@ -98,6 +106,14 @@ flops = FlopCountAnalysis(model, inputs)
 Please refer to [fvcore document](https://detectron2.readthedocs.io/en/latest/modules/fvcore.html#fvcore.nn.FlopCountAnalysis) for more details. 
 
 We encourage the participants to use it for the analysis of the models. `get_flops.py` could be an example to adapt it to your own model.
+
+
+
+---
+
+below are untested
+
+---
 
 ### 6. Evaluation
 
